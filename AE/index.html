@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Forever & Always - สัญญาว่าจะรักและห่วงใยตลอดไป 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Prompt:wght@200;300;400;500;600&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- พื้นหลังแอนิเมชันหัวใจและแสงวิบวับ -->
+    <div id="particles-container"></div>
+    <div class="sparkles-container" id="sparkles"></div>
+
+    <!-- หน้าแรก (Landing Page) -->
+    <section id="landing">
+        <div class="landing-content fade-in">
+            <div class="gift-deco top-left">🎁</div>
+            <div class="gift-deco top-right">🎀</div>
+            <div class="crown">👑</div>
+            <h1 class="title glow-text">Forever & Always</h1>
+            <div class="divider">
+                <span class="gift-divider">🎁</span>
+                <span class="heart-divider">💖</span>
+                <span class="gift-divider">🎁</span>
+            </div>
+            <h2 class="subtitle">สัญญาว่าจะรักและห่วงใยเธอตลอดไป</h2>
+            <p class="landing-desc">มีของขวัญและความในใจอยากมอบให้เธอ...</p>
+            <button id="start-btn" class="btn pulse-btn">
+                <span>เปิดกล่องของขวัญ</span>
+                <span class="btn-icon">🎁</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- สไลด์โชว์รูปภาพและความทรงจำ (Slideshow) -->
+    <section id="slideshow" class="hidden">
+        <div class="slide-wrapper">
+            <div class="slides-container" id="slides-container">
+                <!-- สไลด์จะถูกสร้างอัตโนมัติจาก script.js -->
+            </div>
+        </div>
+
+        <!-- จุดบอกตำแหน่งสไลด์ -->
+        <div class="slide-dots" id="slide-dots"></div>
+
+        <!-- ปุ่มควบคุม ซ้าย / ขวา -->
+        <div class="controls">
+            <button id="prev-btn" class="control-btn" title="ย้อนกลับ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <span class="slide-counter" id="slide-counter">1 / 1</span>
+            <button id="next-btn" class="control-btn" title="ถัดไป">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <!-- แถบความคืบหน้าด้านล่าง -->
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </section>
+
+    <!-- เครื่องเล่นเพลงพื้นหลัง -->
+    <div id="music-player">
+        <button id="music-toggle" class="music-btn" title="เปิด/ปิดเสียงเพลง">
+            <span class="music-icon">🎵</span>
+            <div class="music-wave">
+                <span></span><span></span><span></span>
+            </div>
+        </button>
+        <audio id="bg-music" loop preload="auto">
+            <source src="A Thousand Years - Christina Perri .mp3" type="audio/mpeg">
+            <source src="A Thousand Years.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
